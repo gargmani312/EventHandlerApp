@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>
+		MY Event Index	
+	</title>
+	</head>
+	<body>
+		<!-- ++++++++++++++++++++++++++++ [Add Event] ++++++++++++++++++++++++++++++ -->
+		<h1>Add Event</h1>
+		<form action="/api/event/add", method="post">
+			<table>
+				<tr>
+					<th>
+						event_type
+					</th>
+					<td><input type="text" name="event_type"></td>	
+				</tr>
+				<tr>
+					<th>
+						store_number
+					</th>
+					<td><input type="text" name="store_number"></td>	
+				</tr>
+				<tr>
+					<th>
+						store
+					</th>
+					<td><input type="text" name="store"></td>	
+				</tr>
+				<tr>
+					<th>
+						floor
+					</th>
+					<td><input type="text" name="floor"></td>	
+				</tr>
+				<tr>
+					<th>
+						event_date
+					</th>
+					<td><input type="text" name="event_date"></td>	
+				</tr>
+				<tr>
+					<th>
+						start_time
+					</th>
+					<td><input type="text" name="start_time"></td>	
+				</tr>
+				<tr>
+					<th>
+						end_time
+					</th>
+					<td><input type="text" name="end_time"></td>	
+				</tr>
+				<tr>
+					<th>
+						contact_email
+					</th>
+					<td><input type="text" name="contact_email"></td>	
+				</tr>
+				<tr>
+					<th>
+						contact_phone
+					</th>
+					<td><input type="text" name="contact_phone"></td>	
+				</tr>
+				<tr>
+					<th>
+						status
+					</th>
+					<td><input type="text" name="status"></td>	
+				</tr>
+				<tr>
+					<td><input type="submit" name="event" value="Event"></td>
+				</tr>
+			</table>		
+		</form>
+		<!-- ++++++++++++++++++++++++++++ [Add Rsvp] ++++++++++++++++++++++++++++++ -->
+		<h1>Add Rsvp</h1>
+		<form action="/api/rsvp/add", method="post">
+			<table>
+				<tr>
+					<th>
+						guest_1
+					</th>
+					<td><input type="text" name="guest_1"></td>	
+				</tr>
+				<tr>
+					<th>
+						guest_2
+					</th>
+					<td><input type="text" name="guest_2"></td>	
+				</tr>
+				<tr>
+					<th>
+						address_line1
+					</th>
+					<td><input type="text" name="address_line1"></td>	
+				</tr>
+				<tr>
+					<th>
+						address_line2
+					</th>
+					<td><input type="text" name="address_line2"></td>	
+				</tr>
+				<tr>
+					<th>
+						email
+					</th>
+					<td><input type="text" name="email"></td>	
+				</tr>
+				<tr>
+					<th>
+						phone
+					</th>
+					<td><input type="text" name="phone"></td>	
+				</tr>
+				<tr>
+					<th>
+						reg_id
+					</th>
+					<td><input type="text" name="reg_id"></td>	
+				</tr>
+				<tr>
+					<th>
+					wedding_date
+					</th>
+					<td><input type="text" name="wedding_date"></td>	
+				</tr>
+				<tr>
+					<th>
+						event_id
+					</th>
+					<td><input type="text" name="event_id"></td>	
+				</tr>
+				<tr>
+					<td><input type="submit" name="rsvp" value="Event"></td>
+				</tr>
+			</table>		
+		</form>
+		<!-- ++++++++++++++++++++++++++++ [Add User] ++++++++++++++++++++++++++++++ -->
+		<h1>Add User</h1>
+		<form action="/api/user", method="post">
+			<table>
+				<tr>
+					<th>
+						first_name
+					</th>
+					<td><input type="text" name="first_name"></td>	
+				</tr>
+				<tr>
+					<th>
+						last_name
+					</th>
+					<td><input type="text" name="last_name"></td>	
+				</tr>
+				<tr>
+					<th>
+						username
+					</th>
+					<td><input type="text" name="username"></td>	
+				</tr>
+				<tr>
+					<th>
+						email
+					</th>
+					<td><input type="text" name="email"></td>	
+				</tr>
+				<tr>
+					<th>
+						password
+					</th>
+					<td><input type="text" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="user" value="user"></td>
+				</tr>
+			</table>		
+		</form>
+		<!-- ++++++++++++++++++++++++++++ [User Login] ++++++++++++++++++++++++++++++ -->
+		<h1>User Login</h1>
+		<form action="/api/user/login", method="post">
+			<table>
+				<tr>
+					<th>
+						email
+					</th>
+					<td><input type="text" name="email"></td>	
+				</tr>
+				<tr>
+					<th>
+						password
+					</th>
+					<td><input type="text" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="user" value="Login"></td>
+				</tr>
+			</table>		
+		</form>
+		<!-- ++++++++++++++++++++++++++++ [Update_status} ++++++++++++++++++++++++++++++ -->
+		<h1>Update Status</h1>
+		<form action="/api/event/update_status", method="post">
+			<table>
+				<tr>
+					<th>
+						id
+					</th>
+					<td><input type="text" name="id"></td>	
+				</tr>
+				<tr>
+					<th>
+						status
+					</th>
+					<td><input type="text" name="status"></td>	
+				</tr>
+				<tr>
+					<td><input type="submit" name="update_status" value="Update status"></td>
+				</tr>
+			</table>		
+		</form>
+		<h1>Edit Event</h1>
+		<form action="/api/event/edit", method="post">
+			<table>
+				<tr>
+					<th>
+						id
+					</th>
+					<td><input type="text" name="id"></td>	
+				</tr>
+				<tr>
+					<th>
+						event_type
+					</th>
+					<td><input type="text" name="event_type"></td>	
+				</tr>
+				<tr>
+					<th>
+						store_number
+					</th>
+					<td><input type="text" name="store_number"></td>	
+				</tr>
+				<tr>
+					<th>
+						store
+					</th>
+					<td><input type="text" name="store"></td>	
+				</tr>
+				<tr>
+					<th>
+						floor
+					</th>
+					<td><input type="text" name="floor"></td>	
+				</tr>
+				<tr>
+					<th>
+						event_date
+					</th>
+					<td><input type="text" name="event_date"></td>	
+				</tr>
+				<tr>
+					<th>
+						start_time
+					</th>
+					<td><input type="text" name="start_time"></td>	
+				</tr>
+				<tr>
+					<th>
+						end_time
+					</th>
+					<td><input type="text" name="end_time"></td>	
+				</tr>
+				<tr>
+					<th>
+						contact_email
+					</th>
+					<td><input type="text" name="contact_email"></td>	
+				</tr>
+				<tr>
+					<th>
+						contact_phone
+					</th>
+					<td><input type="text" name="contact_phone"></td>	
+				</tr>
+				<tr>
+					<th>
+						status
+					</th>
+					<td><input type="text" name="status"></td>	
+				</tr>
+				<tr>
+					<td><input type="submit" name="event" value="Edit Event"></td>
+				</tr>
+			</table>		
+		</form>
+	</body>
+</html>
+
+

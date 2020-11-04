@@ -1,0 +1,26 @@
+{
+  "name": "myevents",
+  "version": "1.0.0",
+  "description": "My Event handler in node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoic1979/myevents.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stoic1979/myevents/issues"
+  },
+  "homepage": "https://github.com/stoic1979/myevents#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^5.10.11"
+  }
+}
